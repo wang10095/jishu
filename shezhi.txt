@@ -1,0 +1,158 @@
+设置
+
+
+192.168.3.128
+
+清除一个项目里的svn信息
+zf2-app 是项目名字
+sudo find /Users/pary/Desktop/zf2-app -name ".svn" -exec rm -r {} \;
+sudo find /Users/zymini-a/Desktop/Archers -name ".svn" -exec rm -r {} \;
+
+Xcode下载
+https://developer.apple.com/downloads/
+http://www.zhihu.com/question/25547224
+xcode5和xcode6共存
+xcode下载列表
+https://developer.apple.com/download/more/
+
+FileZilla  文件-站点管理器
+192.168.1.121
+资源打包
+image_pvr_ccz.sh
+
+Cornerstone
+提交不了
+1.Working Copy(clean)
+
+服务器
+http://122.0.71.122/svn/client/
+jian.feng
+abc.123
+
+
+配置SVN在Xcode
+http://122.0.71.122/svn/shared
+
+
+路径
+/Users/zymini-a/Documents/cocos
+
+新项目服务器地址
+http://122.0.71.122/svn/client/trunk/Slots-crash
+http://192.168.1.121:8090/svn/client/trunk/Slots-OL/
+
+彩票策划原型图
+http://192.168.1.121:8090/doc/
+
+彩票美术资源
+http://122.0.71.122/svn/shared/trunk/SlotsCrash-doc/Pics/
+
+证书
+zuanyan
+
+http://192.168.1.121:8090/doc/new_slots/香港项目
+http://192.168.1.121:8090/bugfree3.0.4/index.php/info/index?type=bug&product_id=2  服务器bug
+香港项目支付测试账号
+slotshkong@test.com
+Zuanyan123456
+
+香港google play 开发者账户
+bidstalk2015@gmail.com
+tEch!2015zuan
+rebeca1128@163.com
+
+zuanyan的IOS支付测试账号
+xuzhiqiang123@test.com   Zuanyan123456
+
+VPN 登陆
+账号 wodegamemail@126.com
+密码 1234_com
+
+
+export COCOS2DX_ROOT=${QUICK_COCOS2DX_ROOT}/lib/cocos2d-x
+export ANDROID_NDK_ROOT=/Users/mey/tools/android/android-ndk-r9c
+export ANDROID_SDK_ROOT=/Users/mey/tools/android/android-sdk-macosx
+#export NDK_MODULE_PATH=/Users/mey/project/slot/client/trunk/SlotFun
+export NDK_MODULE_PATH=/Users/mey/project/slot/client/trunk/Slot-crash
+export NDK_ROOT=$ANDROID_NDK_ROOT
+
+CCMotionStreak 彗星效果
+    self:setTouchEnabled(true)
+    self:setTouchSwallowEnabled(false)
+    self:addNodeEventListener(cc.NODE_TOUCH_EVENT, function(event)
+    if event.name == "began" then
+        print("onTouch began", math.random(1000))
+        return true
+        end
+    end)
+
+export ANDROID_NDK_ROOT=/Users/zymini-a/Documents/android-ndk-r9c
+export ANDROID_SDK_ROOT=/Users/zymini-a/Documents/adt-bundle-mac-x86_64-20140702
+export NDK_MODULE_PATH=/Users/zymini-a/projects
+export NDK_ROOT=$ANDROID_NDK_ROOT
+
+安卓改名
+iOS - info - bundle display name
+android  res - values -  string.xml
+
+${PRODUCT_NAME}  BundledisplayName
+
+svn -version
+svn up
+
+查看Keystore(facebook keyhash)
+keytool -list -v -keystore /Users/zymini-a/projects/client/trunk/Slots-HK/frameworks/runtime-src/proj.android/SlotsHK.Keystore  -storepass zuanyan
+生成keyhash
+keytool -exportcert -alias slotshk -keystore /Users/zymini-a/projects/client/trunk/Slots-HK/frameworks/runtime-src/proj.android/SlotsHK.Keystore | openssl sha1 -binary | openssl base64
+输入密码zuanyan
+
+facebook 开发者账户
+https://developers.facebook.com/
+woovan@sina.com  
+zWoovanz1
+
+
+
+IOS开发者账户
+app应用
+https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa/ra/ng/
+app证书管理中心：
+https://idmsa.apple.com/IDMSWebAuth/login?&appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&path=%2F%2Faccount%2Fios%2Fprofile%2FprofileList.action
+zuanyan_beijing@sohu.com
+Zuanyan2601
+
+google开发者账户
+应用
+https://play.google.com/apps/publish/?dev_acc=03461598909339841699#AppListPlace
+(设置里添加测试账号)
+zuanyan260d@gmail.com 
+slots2601
+slotsmachine.gamebox@gmail.com
+Slots2601
+
+Android应用开发，力推官方文档
+http://developer.android.com/training/index.html
+http://developer.android.com/guide/components/index.html
+ http://developer.android.com/tools/index.html
+
+Architectures :Standard Architectures(64-bit Intel)(x86_64) - $(ARCHS_STANDARD))
+Valid Aechitectures:i386 x86_64
+
+Xcode改项目名称：对应工程名字，scheme,
+
+keytool -list -v  -keystore xxxx.keystore -storepass
+示例查看keystore
+ keytool -list -v -keystore /Users/zymini-a/projects/client/trunk/caipiao/Archers/frameworks/runtime-src/proj.android_no_anysdk/archers.Keystore -storepass zuanyan
+keytool -list -v -keystore /Users/zymini-a/projects/client/trunk/HongBoECai/frameworks/runtime-src/proj.android/sign/HongBoYiCai.keystore -storepass hongboyicai
+
+
+keytool -list -v -keystore /Users/zymini-a/Desktop/app/keys/hbec.keystore -storepass HONGBOECAI/SONG+
+
+苹果最新发布流程:2016.10.8
+https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/Introduction/Introduction.html
+
+
+
+216.58.221.110
+
+./build_native.sh
